@@ -1,0 +1,26 @@
+{
+  "name": "ApplicationInsights-angular-logging",
+  "description": "AngularJS $log decorator to also log to Microsoft Azure Application Insights",
+  "keywords": [
+    "angular",
+    "application insights",
+    "appinsights",
+    "logging"
+  ],
+  "authors": [
+    "Brett Jacobson"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.8"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0"
+  }
+}

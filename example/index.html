@@ -1,44 +1,64 @@
 ﻿<!DOCTYPE html>
 <html ng-app="example">
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Azure Application Insights sample | Angulartics</title>
+    <script type="text/javascript">
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "http://az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: '@@iKey@@'  //TODO make gulp replace this with insert your key message
+            , verboseLogging: true
+        });
+
+        window.appInsights = appInsights;
+
+        appInsights.pageViewProperties = {
+            Username: 'joe.example@foo.com',
+            PersonId: 42
+        };
+        window.appInsights = appInsights;
+    </script>
 </head>
 <body>
     <div>
         <p>Please check the console for some log output, and log into AppInsights to see if you received the telemetry.</p>
         <p>Also check the network traffic to see the telemetry requests being sent up to Azure</p>
     </div>
-<ui-view></ui-view>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-<script src="../src/logging-appinsights.js"></script>
-<script type="text/javascript">
-    (function () {
-        'use strict';
+    <ui-view></ui-view>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js">
 
-        angular.module('example', ['ui.router', 'logging-appinsights'])
-            .config(function ($urlRouterProvider, $stateProvider) {
-                $urlRouterProvider.otherwise('/');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="../src/logging-appinsights.js"></script>
+    <script type="text/javascript">
+        (function () {
+            'use strict';
 
-                $stateProvider.state('home', {
-                    url: '/',
-                    controller: 'exampleController as vm'
+            angular.module('example', ['ui.router', 'logging-appinsights'])
+                .config(function ($urlRouterProvider, $stateProvider) {
+                    $urlRouterProvider.otherwise('/');
+
+                    $stateProvider.state('home', {
+                        url: '/',
+                        controller: 'exampleController as vm'
+                    });
                 });
-            });
 
-        angular.module('example')
-            .controller('exampleController', exampleController);
+            angular.module('example')
+                .controller('exampleController', exampleController);
 
-        exampleController.$inject = ['$log'];
+            exampleController.$inject = ['$log'];
 
-        function exampleController($log) {
-            $log.log('here is a plain log call');
-            $log.info('here is some info');
-            $log.warn('here is a warning');
-            $log.error('here is an error');
-            $log.debug('here is a debug message');
-        }
-    })();
-</script>
+            function exampleController($log) {
+                $log.log('here is a plain log call');
+                $log.info('here is some info');
+                $log.warn('here is a warning');
+                $log.error('here is an error');
+                $log.debug('here is a debug message');
+            }
+        })();
+    </script>
 </body>
 </html>

@@ -23,21 +23,34 @@
 
                 function overridenLog() {
                     $delegate.log.apply(null, arguments);
+
+                    //window.appInsights.trackTrace(arguments[0]);
+                    window.appInsights.trackEvent("bob");
+                    window.appInsights.flush();
                 }
 
                 function overriddenDebug() {
                     $delegate.debug.apply(null, arguments);
+
+                    window.appInsights.trackTrace(arguments[0]);
                 }
 
                 function overriddenInfo() {
                     $delegate.info.apply(null, arguments);
+
+                    window.appInsights.trackTrace(arguments[0]);
                 }
+
                 function overriddenError() {
                     $delegate.error.apply(null, arguments);
+
+                    window.appInsights.trackTrace(arguments[0]);
                 }
 
                 function overriddenWarn() {
                     $delegate.warn.apply(null, arguments);
+
+                    window.appInsights.trackTrace(arguments[0]);
                 }
             };
         });
