@@ -1,0 +1,937 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeEditing/GenerateMemberBody/CopyXmlDocumentation/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeEditing/GenerateMemberBody/MethodImplementationKind/@EntryValue">NotCompiledCode</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ArrangeThisQualifier/@EntryIndexedValue"></s:String>
+	<s:Boolean x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ArrangeThisQualifier/@EntryIndexRemoved">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=BuiltInTypeReferenceStyle/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=FunctionsUsedBeforeDeclared/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=PrivateMembersMustHaveComments/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=PublicMembersMustHaveComments/@EntryIndexedValue">HINT</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=RedundantBoolCompare/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=RedundantCommaInArrayInitializer/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=RedundantCommaInInitializer/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=RSIS/@EntryIndexedValue">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Profile name="RSIS"&gt;&lt;CSArrangeThisQualifier&gt;True&lt;/CSArrangeThisQualifier&gt;&lt;CSRemoveCodeRedundancies&gt;True&lt;/CSRemoveCodeRedundancies&gt;&lt;CSUseAutoProperty&gt;False&lt;/CSUseAutoProperty&gt;&lt;CSMakeFieldReadonly&gt;False&lt;/CSMakeFieldReadonly&gt;&lt;CSUseVar&gt;&lt;BehavourStyle&gt;DISABLED&lt;/BehavourStyle&gt;&lt;LocalVariableStyle&gt;IMPLICIT_WHEN_INITIALIZER_HAS_TYPE&lt;/LocalVariableStyle&gt;&lt;ForeachVariableStyle&gt;ALWAYS_EXPLICIT&lt;/ForeachVariableStyle&gt;&lt;/CSUseVar&gt;&lt;CSUpdateFileHeader&gt;False&lt;/CSUpdateFileHeader&gt;&lt;VBOptimizeImports&gt;False&lt;/VBOptimizeImports&gt;&lt;VBShortenReferences&gt;False&lt;/VBShortenReferences&gt;&lt;XMLReformatCode&gt;False&lt;/XMLReformatCode&gt;&lt;CSOptimizeUsings&gt;&lt;OptimizeUsings&gt;True&lt;/OptimizeUsings&gt;&lt;EmbraceInRegion&gt;False&lt;/EmbraceInRegion&gt;&lt;RegionName&gt;&lt;/RegionName&gt;&lt;/CSOptimizeUsings&gt;&lt;CSShortenReferences&gt;True&lt;/CSShortenReferences&gt;&lt;VBReformatCode&gt;False&lt;/VBReformatCode&gt;&lt;CSReformatCode&gt;True&lt;/CSReformatCode&gt;&lt;CSharpFormatDocComments&gt;True&lt;/CSharpFormatDocComments&gt;&lt;CSReorderTypeMembers&gt;False&lt;/CSReorderTypeMembers&gt;&lt;HtmlReformatCode&gt;True&lt;/HtmlReformatCode&gt;&lt;JsReformatCode&gt;True&lt;/JsReformatCode&gt;&lt;JsInsertSemicolon&gt;True&lt;/JsInsertSemicolon&gt;&lt;CssAlphabetizeProperties&gt;True&lt;/CssAlphabetizeProperties&gt;&lt;CssReformatCode&gt;True&lt;/CssReformatCode&gt;&lt;CSArrangeQualifiers&gt;True&lt;/CSArrangeQualifiers&gt;&lt;/Profile&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=SortClass/@EntryIndexedValue"></s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=SortClass/@EntryIndexRemoved">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/RecentlyUsedProfile/@EntryValue">SortClass</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/SilentCleanupProfile/@EntryValue">RSIS</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CommonFormatter/USE_INDENTS_FROM_MAIN_LANGUAGE_IN_FILE/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpCodeStyle/StaticQualifier/STATIC_MEMBERS_QUALIFY_MEMBERS/@EntryValue">Field, Property, Event, Method</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpCodeStyle/ThisQualifier/INSTANCE_MEMBERS_QUALIFY_DECLARED_IN/@EntryValue">ThisClass, BaseClass</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpCodeStyle/ThisQualifier/INSTANCE_MEMBERS_QUALIFY_MEMBERS/@EntryValue">Field, Property, Event, Method</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_LINQ_QUERY/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_ARGUMENT/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_ARRAY_AND_OBJECT_INITIALIZER/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_CALLS_CHAIN/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_EXTENDS_LIST/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_FOR_STMT/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_PARAMETER/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTIPLE_DECLARATION/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTLINE_TYPE_PARAMETER_CONSTRAINS/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTLINE_TYPE_PARAMETER_LIST/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_ATTRIBUTE_STYLE/@EntryValue">SEPARATE</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_FOR_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_FOREACH_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_IFELSE_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_USING_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_WHILE_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/INDENT_ANONYMOUS_METHOD_BLOCK/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/LINE_FEED_AT_FILE_END/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_FIELD_ATTRIBUTE_ON_SAME_LINE/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_SIMPLE_ACCESSORHOLDER_ON_SINGLE_LINE/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_SIMPLE_ACCESSOR_ATTRIBUTE_ON_SAME_LINE/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/REDUNDANT_THIS_QUALIFIER_STYLE/@EntryValue">ALWAYS_USE</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_AROUND_MULTIPLICATIVE_OP/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_WITHIN_SINGLE_LINE_ARRAY_INITIALIZER_BRACES/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_CHAINED_METHOD_CALLS/@EntryValue">CHOP_IF_LONG</s:String>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_LIMIT/@EntryValue">180</s:Int64>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_LINES/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/HtmlFormatter/TagSpaceBeforeHeaderEnd1/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/ALIGN_MULTILINE_PARAMETER/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/ALIGN_MULTIPLE_DECLARATION/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/FORCE_CONTROL_STATEMENTS_BRACES/@EntryValue">ALWAYS_ADD</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/INDENT_CASE_FROM_SWITCH/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatBracesLayout/FORCE_CONTROL_STATEMENTS_BRACES/@EntryValue">ALWAYS_ADD</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatBracesLayout/INDENT_CASE_FROM_SWITCH/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatOther/ALIGN_MULTILINE_PARAMETER/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatOther/ALIGN_MULTIPLE_DECLARATION/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatSpaces/SPACE_BEFORE_METHOD_PARENTHESES/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatSpaces/SPACE_BEFORE_METHOD_PARENTHESES_ANONYMOUS/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/KEEP_BLANK_LINES_BETWEEN_DECLARATIONS/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/KEEP_BLANK_LINES_IN_CODE/@EntryValue">1</s:Int64>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/QUOTE_STYLE/@EntryValue">SingleQuoted</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/SPACE_BEFORE_METHOD_PARENTHESES/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/SPACE_BEFORE_METHOD_PARENTHESES_ANONYMOUS/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/Generate/=Constructor/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Generate/=Constructor/Options/=XmlDocumentation/@EntryIndexedValue">False</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/Generate/=Global/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Generate/=Global/Options/=PropertyBody/@EntryIndexedValue">Automatic property</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/Generate/=Implementations/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Generate/=Implementations/Options/=WrapInRegion/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/CodeStyle/Generate/=Implementations/Options/=XmlDocumentation/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/EventHandlerPatternLong/@EntryValue">$object$_On$event$</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Constants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=EnumMember/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Interfaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="I" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=LocalConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=MethodPropertyEvent/@EntryIndexedValue">&lt;Policy Inspect="False" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Other/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Parameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateInstanceFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateStaticFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateStaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PublicFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=StaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=TypeParameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="T" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/UserRules/=8e957a5d_002D41e9_002D4660_002D83ff_002D1c1c58531977/@EntryIndexedValue">&lt;Policy&gt;&lt;Descriptor Staticness="Instance" AccessRightKinds="Private" Description="Private properties"&gt;&lt;ElementKinds&gt;&lt;Kind Name="PROPERTY" /&gt;&lt;/ElementKinds&gt;&lt;/Descriptor&gt;&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="AaBb" /&gt;&lt;/Policy&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/JavaScriptNaming/UserRules/=JS_005FBLOCK_005FSCOPE_005FCONSTANT/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/JavaScriptNaming/UserRules/=JS_005FBLOCK_005FSCOPE_005FVARIABLE/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/JavaScriptNaming/UserRules/=JS_005FLOCAL_005FVARIABLE/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/EventHandlerPatternLong/@EntryValue">$object$_On$event$</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Constants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=EnumMember/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Interfaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="I" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=LocalConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aa_bb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=MethodPropertyEvent/@EntryIndexedValue">&lt;Policy Inspect="False" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Other/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Parameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateInstanceFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateStaticFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateStaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PublicFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=StaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=TypeParameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="T" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/WebNaming/UserRules/=ASP_005FFIELD/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/WebNaming/UserRules/=ASP_005FHTML_005FCONTROL/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/WebNaming/UserRules/=ASP_005FTAG_005FNAME/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/WebNaming/UserRules/=ASP_005FTAG_005FPREFIX/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/XamlNaming/UserRules/=NAMESPACE_005FALIAS/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/XamlNaming/UserRules/=XAML_005FFIELD/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/XamlNaming/UserRules/=XAML_005FRESOURCE/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EAddAccessorOwnerDeclarationBracesMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateThisQualifierSettings/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002EJavaScript_002ECodeStyle_002ESettingsUpgrade_002EJsCodeFormatterSettingsUpgrader/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/@KeyIndexDefined">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/EntryName/@EntryValue"></s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/Position/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=5CF342079CE151478A11D345C1816DD0/Entry/=4C84A7D189E28A43AA2631BBE4694112/@KeyIndexDefined">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=5CF342079CE151478A11D345C1816DD0/Entry/=4C84A7D189E28A43AA2631BBE4694112/EntryName/@EntryValue"></s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=82514885B0EC3D43B7B61C37BCFD0BA4/Entry/=2B4F6F494E484D4AB67AEBC47828B983/@KeyIndexDefined">False</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=82514885B0EC3D43B7B61C37BCFD0BA4/Entry/=2B4F6F494E484D4AB67AEBC47828B983/Position/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/CustomProperties/=FileName/@EntryIndexedValue">DataService</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Description/@EntryValue">RSIS DataService class</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=App/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=App/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=AppContextInterface/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=AppContextInterface/Expression/@EntryValue">completeType("")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=AppContextInterface/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=ENTITY/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Field/=NAMESPACE/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0033040296B8934DA32BFF705360C0F2/Text/@EntryValue">using System;&#xD;
+using System.Linq.Expressions;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+	public interface I$ENTITY$DataService&#xD;
+	{&#xD;
+	}&#xD;
+&#xD;
+    public class $ENTITY$DataService : DataServiceBase&lt;$ENTITY$&gt;, I$ENTITY$DataService&#xD;
+    {&#xD;
+        public $ENTITY$Service($AppContextInterface$ context)&#xD;
+            : base(new $App$UnitOfWorkAdapter(context), context.$ENTITY$s)&#xD;
+        {&#xD;
+        }&#xD;
+&#xD;
+        public override $ENTITY$ GetById(int id)&#xD;
+        {&#xD;
+            throw new NotImplementedException("TODO. Not yet implemented but will be.");&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Categories/=RSIS_0020Angular/@EntryIndexedValue">RSIS Angular</s:String>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/CustomProperties/=Extension/@EntryIndexedValue">js</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/CustomProperties/=FileName/@EntryIndexedValue">Controller</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Description/@EntryValue">RSIS ng Controller</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Field/=APP/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Field/=APP/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Field/=FEATURE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Field/=FEATURE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Field/=NAME/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Field/=NAME/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Scope/=50AF970EC1279940A9104D92F89E47E1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Scope/=50AF970EC1279940A9104D92F89E47E1/Type/@EntryValue">InAspCSharpProject</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020507390900F94AB43F59B56840FF2E/Text/@EntryValue">(function () {&#xD;
+    'use strict';&#xD;
+&#xD;
+    angular&#xD;
+        .module('$APP$.$FEATURE$')&#xD;
+        .controller('$NAME$Controller', $NAME$Controller);&#xD;
+&#xD;
+    $NAME$Controller.$inject = ['$scope'];&#xD;
+&#xD;
+    function peopleIndexController($scope) {&#xD;
+        /*jshint validthis: true */&#xD;
+        var vm = this;&#xD;
+&#xD;
+        activate();&#xD;
+&#xD;
+        function activate() {&#xD;
+        }&#xD;
+    };&#xD;
+})();</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/CustomProperties/=FileName/@EntryIndexedValue">Configuration</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Description/@EntryValue">RSIS Entity Context Configuration</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=App/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=App/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=ENTITY/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=ENTITY/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=NAMESPACE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=TYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=TYPE/Expression/@EntryValue">typeName()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Field/=TYPE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1EC8AFD553738842B81E59ED25A4DBA4/Text/@EntryValue">using System.ComponentModel.DataAnnotations.Schema;&#xD;
+using Nov.$App$.Models;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+    internal class $ENTITY$Configuration : EntityTypeConfiguration&lt;$ENTITY$&gt;&#xD;
+    {&#xD;
+        public $TYPE$()&#xD;
+        {&#xD;
+            this.ToTable("$ENTITY$", RsisApplicationContext.AppSchemaName);&#xD;
+            this.HasKey(x =&gt; x.Id);&#xD;
+            this.Property(x =&gt; x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);&#xD;
+        }&#xD;
+    }&#xD;
+}&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Categories/=RSIS_0020MVC/@EntryIndexedValue">RSIS MVC</s:String>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/CustomProperties/=FileName/@EntryIndexedValue">controller</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Description/@EntryValue">RSIS MVC Controller</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Field/=CLASS/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Field/=CLASS/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Field/=NAMESPACE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Scope/=50AF970EC1279940A9104D92F89E47E1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Scope/=50AF970EC1279940A9104D92F89E47E1/Type/@EntryValue">InAspCSharpProject</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=20EBA28536D0FC47833CA488E467A97C/Text/@EntryValue">using Nov.RiskyBadger.Helpers;&#xD;
+using Nov.Utility;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+  public class $CLASS$ : RiskyBadgerBaseController&#xD;
+  {&#xD;
+   public $CLASS$(IRsisLogger logger,&#xD;
+                  IRiskyBadgerUserInfo userInfo)&#xD;
+            : base(logger, userInfo)&#xD;
+        {&#xD;
+        }&#xD;
+  }&#xD;
+}&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/CustomProperties/=Extension/@EntryIndexedValue">js</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/CustomProperties/=FileName/@EntryIndexedValue">Data.service.spec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Description/@EntryValue">ng dataService Tests</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=ANGULARMODULE1/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=ANGULARMODULE1/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=DATASERVICE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=DATASERVICE/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=MODULE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=MODULE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=MODULEPATH/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Field/=MODULEPATH/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Scope/=50AF970EC1279940A9104D92F89E47E1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Scope/=50AF970EC1279940A9104D92F89E47E1/Type/@EntryValue">InAspCSharpProject</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=353FBAAB8F71464C9017463274F2F148/Text/@EntryValue">//Global test references//&#xD;
+///&lt;reference path="~/JSTests/lib/testReferences.js"/&gt;&#xD;
+&#xD;
+// Test specific files&#xD;
+///&lt;reference path="~/app/$MODULEPATH$/$MODULE$.module.js"/&gt;&#xD;
+///&lt;reference path="~/app/$MODULEPATH$/$DATASERVICE$.service.js"/&gt;&#xD;
+&#xD;
+&#xD;
+describe('$DATASERVICE$ dataService', function () {&#xD;
+    var sut,&#xD;
+        dataServiceHelper,&#xD;
+        urls,&#xD;
+        specHelper,&#xD;
+        actual;&#xD;
+&#xD;
+    beforeEach(function () {&#xD;
+        module('rsis');&#xD;
+        module('$ANGULARMODULE1$');&#xD;
+&#xD;
+        inject(function (_$DATASERVICE$_, _$DATASERVICE$Urls_, _dataServiceHelper_, _specHelper_) {&#xD;
+            sut = _$DATASERVICE$_;&#xD;
+            urls = _$DATASERVICE$Urls_;&#xD;
+            dataServiceHelper = _dataServiceHelper_;&#xD;
+            specHelper = _specHelper_;&#xD;
+        });&#xD;
+    });&#xD;
+});</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Categories/=ng/@EntryIndexedValue">ng</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Description/@EntryValue">ng DataService URL spec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Field/=DATASERVICEMETHOD/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Field/=DATASERVICEMETHOD/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Field/=URL/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Field/=URL/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Scope/=FFA15E6CFCBE90499C572A859225B012/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Scope/=FFA15E6CFCBE90499C572A859225B012/CustomProperties/=availableInTypeScript/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Scope/=FFA15E6CFCBE90499C572A859225B012/Type/@EntryValue">InJavaScriptFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Shortcut/@EntryValue">specUrl</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3D4134156D885E478FED46E1F96099CB/Text/@EntryValue">it('should have $DATASERVICEMETHOD$ URL defined correctly (with no trailing slash)', function () {&#xD;
+	expect(urls.DATASERVICEMETHOD).toBeDefined();&#xD;
+	expect(urls.DATASERVICEMETHOD).toBe('$URL$');&#xD;
+});&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Categories/=RSIS_0020MVC/@EntryIndexedValue">RSIS MVC</s:String>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/CustomProperties/=FileName/@EntryIndexedValue">ControllerTests</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Description/@EntryValue">RSIS MVC Controller Tests</s:String>
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Field/=CLASS/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Field/=CLASS/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Field/=NAMESPACE/Order/@EntryValue">0</s:Int64>
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=49C171CB67C465479462CEAFD76741EE/Text/@EntryValue">using System;&#xD;
+using System.Collections.Generic;&#xD;
+using System.Linq;&#xD;
+using Microsoft.VisualStudio.TestTools.UnitTesting;&#xD;
+using Nov.Extensions;&#xD;
+using Nov.RiskyBadger.Controllers.Helpers;&#xD;
+using Nov.RiskyBadger.TestDoubles;&#xD;
+using Nov.RiskyBadger.Web.Controllers.Helpers;&#xD;
+using Nov.Utility;&#xD;
+using Nov.Web.Helpers;&#xD;
+using Should;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+    [TestClass]&#xD;
+  public class $CLASS$Tests  : ControllerBaseTests&lt;$CLASS$, RiskyBadgerActionTestDefinition&gt;&#xD;
+    {&#xD;
+        protected override $CLASS$ BuildController()&#xD;
+        {&#xD;
+            return new $CLASS$(new NullLogger(), new FakeRiskyBadgerUserInfo(1));&#xD;
+        }&#xD;
+&#xD;
+        protected override ICollection&lt;RiskyBadgerActionTestDefinition&gt; GetActionTestDefinitions()&#xD;
+        {&#xD;
+            return new[]&#xD;
+                   {&#xD;
+                       new RiskyBadgerActionTestDefinition&#xD;
+                       {&#xD;
+                           ActionMethod = controller =&gt; controller.GetType().GetMethod("SomeAction", new[] { typeof (int), typeof (int), typeof (string), typeof (string), typeof(string), typeof(int?) }),&#xD;
+                           ShouldHavePermissions = true,&#xD;
+                           Return500OnUnauthorized = false,&#xD;
+                           Permissions = "IsAuthenticated",&#xD;
+                           ShouldHaveEnsureCurrentPersonExists = false,&#xD;
+                       },&#xD;
+                   };&#xD;
+        }&#xD;
+   }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Categories/=ng/@EntryIndexedValue">ng</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Description/@EntryValue">ng DataService tests</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Field/=DATASERVICEMETHOD/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Field/=DATASERVICEMETHOD/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Field/=DATASERVICEMETHODPARAMETERS/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Field/=DATASERVICEMETHODPARAMETERS/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Field/=URLPROPERTY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Field/=URLPROPERTY/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Scope/=FFA15E6CFCBE90499C572A859225B012/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Scope/=FFA15E6CFCBE90499C572A859225B012/CustomProperties/=availableInTypeScript/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Scope/=FFA15E6CFCBE90499C572A859225B012/Type/@EntryValue">InJavaScriptFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Shortcut/@EntryValue">testJsDs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=554EEC1E968A364090F59342381B3623/Text/@EntryValue">describe('$DATASERVICEMETHOD$', function () {&#xD;
+	it('should be defined', function () {&#xD;
+		expect(sut.$DATASERVICEMETHOD$).toBeDefined();&#xD;
+	});&#xD;
+&#xD;
+	it('should be implemented according to standards (using dataServiceHelper.postWithParameters)', function () {&#xD;
+		var stub = specHelper.stubWithResolvedPromise(dataServiceHelper, 'postWithParameters', {});&#xD;
+&#xD;
+		actual = sut.$DATASERVICEMETHOD$();&#xD;
+&#xD;
+		expect(stub.calledOnce).toBe(true);&#xD;
+		expect(actual.then).toBeDefined();&#xD;
+		expect(stub.alwaysCalledWithExactly(urls.$URLPROPERTY$, { $DATASERVICEMETHODPARAMETERS$ })).toBe(true);&#xD;
+	});&#xD;
+});</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Categories/=Testing/@EntryIndexedValue">Testing</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Description/@EntryValue">MS Unit Test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Field/=ExpectedBehavior/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Field/=ExpectedBehavior/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Field/=MethodName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Field/=MethodName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Field/=StateUnderTest/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Field/=StateUnderTest/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">4.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Shortcut/@EntryValue">test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62BD09603ACFCC4795DBF80C48B91207/Text/@EntryValue">[TestMethod]&#xD;
+public void $MethodName$_$StateUnderTest$_$ExpectedBehavior$()&#xD;
+{&#xD;
+    $END$&#xD;
+}</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Categories/=Imported_00207_002F9_002F2012/@EntryIndexedValue">Imported 7/9/2012</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Description/@EntryValue">jQuery UI Widget, blank</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Scope/=FFA15E6CFCBE90499C572A859225B012/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Scope/=FFA15E6CFCBE90499C572A859225B012/Type/@EntryValue">InJavaScriptFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Shortcut/@EntryValue">Widget</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=69BE8D792913844386CE28143F969B7C/Text/@EntryValue">(function ($, window, document, undefined) {&#xD;
+    $.widget('Nov.WidgetNameHere', {&#xD;
+        options: {&#xD;
+        },&#xD;
+        publicMethod1: function (item) {&#xD;
+        },&#xD;
+        _create: function () {&#xD;
+            var widget = this;&#xD;
+            var $element = widget.element;&#xD;
+        },&#xD;
+        destroy: function () {&#xD;
+            $.Widget.prototype.destroy.call(this);&#xD;
+            // For UI 1.9, define _destroy instead and don't worry about calling the base widget&#xD;
+        },&#xD;
+        _privatemethod1: function (item) {&#xD;
+            var widget = this;&#xD;
+        },&#xD;
+        _privatemethod2: function (item) {&#xD;
+            var widget = this;&#xD;
+        },&#xD;
+    });&#xD;
+})(jQuery, window, document);&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Categories/=RSIS_0020Angular/@EntryIndexedValue">RSIS Angular</s:String>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/CustomProperties/=Extension/@EntryIndexedValue">js</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/CustomProperties/=FileName/@EntryIndexedValue">module</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Description/@EntryValue">RSIS ng Module</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Field/=APP/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Field/=APP/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Field/=FEATURE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Field/=FEATURE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Scope/=50AF970EC1279940A9104D92F89E47E1/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Scope/=50AF970EC1279940A9104D92F89E47E1/Type/@EntryValue">InAspCSharpProject</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=72AE707468CB3A42958DC907A78B8DE9/Text/@EntryValue">(function () {&#xD;
+    'use strict';&#xD;
+&#xD;
+    angular.module('$APP$.$FEATURE$', []);&#xD;
+})();&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/CustomProperties/=FileName/@EntryIndexedValue">BusinessLogic</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Description/@EntryValue">RSIS BusinessLogic</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Field/=ENTITY/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Field/=NAMESPACE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7B473799990C8F47A38C2BFD5F013EA9/Text/@EntryValue">using System;&#xD;
+using System.Linq.Expressions;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+	public enum $ENTITY$ResultCode&#xD;
+    {&#xD;
+        None = 0,&#xD;
+        Okay = 1,&#xD;
+        InvalidItem = -1,&#xD;
+        ItemNotFound = -3, //  zero results found&#xD;
+        NullItemInput = -4,&#xD;
+    }&#xD;
+&#xD;
+	public interface I$ENTITY$BusinessLogic&#xD;
+	{&#xD;
+	}&#xD;
+&#xD;
+    public class $ENTITY$BusinessLogic : BusinessLogicBase&lt;$ENTITY$&gt;, I$ENTITY$BusinessLogic&#xD;
+    {&#xD;
+        public $ENTITY$BusinessLogic(IRsisLogger logger)&#xD;
+            : base(logger)&#xD;
+        {&#xD;
+        }&#xD;
+&#xD;
+        public override $ENTITY$ GetById(int id)&#xD;
+        {&#xD;
+            throw new NotImplementedException("TODO. Not yet implemented but will be.");&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Categories/=RSIS_0020MVC/@EntryIndexedValue">RSIS MVC</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/CustomProperties/=FileName/@EntryIndexedValue">ControllerBuilder</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Description/@EntryValue">RSIS MVC Controller Builder for Tests</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=App/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=App/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=CLASS/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=CLASS/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=NAMESPACE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=TYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=TYPE/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Field/=TYPE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7E5A5126D41F0E4AAB448CBB16193A05/Text/@EntryValue">using System.Diagnostics.CodeAnalysis;&#xD;
+using Nov.$App$;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+    public class $CLASS$Builder : $App$ControllerBuilder&#xD;
+    {&#xD;
+        [SuppressMessage("Microsoft.Usage", "CA2225:OperatorOverloadsHaveNamedAlternates", Justification = "An implicit operator is the desired API")]&#xD;
+        public static implicit operator $CLASS$($TYPE$ builder)&#xD;
+        {&#xD;
+            return builder.Build();&#xD;
+        }&#xD;
+&#xD;
+        public $CLASS$ Build()&#xD;
+        {&#xD;
+&#xD;
+            var controller = new $CLASS$(this.Logger, this.UserInfo)&#xD;
+                             {&#xD;
+                                 Url = this.CreateFakeUrlHelper(),&#xD;
+                             };&#xD;
+            return controller;&#xD;
+        }&#xD;
+/*&#xD;
+        public $CLASS$ With(ISomeDependency dependency)&#xD;
+        {&#xD;
+            this.SomeDependency = dependency;&#xD;
+            return this;&#xD;
+        }&#xD;
+		&#xD;
+        protected ISomeDependency SomeDependency { get; private set; }&#xD;
+*/&#xD;
+    }&#xD;
+}&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Categories/=ng/@EntryIndexedValue">ng</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Description/@EntryValue">Jasmine test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Field/=TESTDESCRIPTION/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Field/=TESTDESCRIPTION/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Scope/=FFA15E6CFCBE90499C572A859225B012/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Scope/=FFA15E6CFCBE90499C572A859225B012/CustomProperties/=availableInTypeScript/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Scope/=FFA15E6CFCBE90499C572A859225B012/Type/@EntryValue">InJavaScriptFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Shortcut/@EntryValue">testJs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=85DEAE85C9187B43AFC3689041064BE4/Text/@EntryValue">describe('$TESTDESCRIPTION$', function () {&#xD;
+});</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Categories/=Business_0020Logic/@EntryIndexedValue">Business Logic</s:String>
+	
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Description/@EntryValue">Business Logic Edit</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=CLASS/Expression/@EntryValue">typeName()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=CLASS/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=ENTITY/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=ENTITYSERVICE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=ENTITYSERVICE/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=ENTITYSERVICE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=RESULTCODE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=RESULTCODE/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Field/=RESULTCODE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">5.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Shortcut/@EntryValue">BLEdit</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A3CFD8C83D66DA4B89DD4DF39C64F38C/Text/@EntryValue"> public BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt; Edit($ENTITY$ model, int currentPersonId)&#xD;
+        {&#xD;
+			if (model == null)&#xD;
+            {&#xD;
+                return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(false, $RESULTCODE$.NullItemInput, null, $RESULTCODE$.NullItemInput.ToString(), ErrorMessages[$RESULTCODE$.NullItemInput]);&#xD;
+            }&#xD;
+            if (currentPersonId &lt; 1)&#xD;
+            {&#xD;
+                return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(false, $RESULTCODE$.InvalidPersonId, null, $RESULTCODE$.InvalidPersonId.ToString(), ErrorMessages[$RESULTCODE$.InvalidPersonId]);&#xD;
+            }&#xD;
+            if (model.Id &lt; 1)&#xD;
+            {&#xD;
+                return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(false, $RESULTCODE$.InvalidItem, null, $RESULTCODE$.InvalidItem.ToString(), ErrorMessages[$RESULTCODE$.InvalidItem]);&#xD;
+            }&#xD;
+&#xD;
+            try&#xD;
+            {&#xD;
+                var item = this.$ENTITYSERVICE$.GetDetails(model.Id);&#xD;
+                if (item == null)&#xD;
+                {&#xD;
+                    return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(false, $RESULTCODE$.ItemNotFound, null, "", ErrorMessages[$RESULTCODE$.ItemNotFound]);&#xD;
+                }&#xD;
+&#xD;
+                MapForEdit(model, item);&#xD;
+                this.$ENTITYSERVICE$.SaveChanges();&#xD;
+&#xD;
+                return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(true, $RESULTCODE$.Okay, item, "", "");&#xD;
+            }&#xD;
+            catch (DbEntityValidationException exception)&#xD;
+            {&#xD;
+                return this.HandleDbEntityValidationException(exception, $RESULTCODE$.DbValidationError);&#xD;
+            }&#xD;
+            catch (Exception exception)&#xD;
+            {&#xD;
+                this.Logger.LogError(exception, "Error", "Exception in $CLASS$.Create");&#xD;
+                throw;&#xD;
+            }&#xD;
+        }&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Categories/=ng/@EntryIndexedValue">ng</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Description/@EntryValue">ng Jasmine spec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Field/=WHAT/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Field/=WHAT/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Scope/=FFA15E6CFCBE90499C572A859225B012/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Scope/=FFA15E6CFCBE90499C572A859225B012/CustomProperties/=availableInTypeScript/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Scope/=FFA15E6CFCBE90499C572A859225B012/Type/@EntryValue">InJavaScriptFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Shortcut/@EntryValue">spec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AC5DB34E89385D4CA365A337BBD7823C/Text/@EntryValue">it('should $WHAT$', function () {&#xD;
+});&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Categories/=Business_0020Logic/@EntryIndexedValue">Business Logic</s:String>
+	
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Description/@EntryValue">Business Logic Create</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=CLASS/Expression/@EntryValue">typeName()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=CLASS/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=ENTITY/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=ENTITY/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=ENTITYSERVICE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=ENTITYSERVICE/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=ENTITYSERVICE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=RESULTCODE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=RESULTCODE/Expression/@EntryValue">completeSmart()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Field/=RESULTCODE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">5.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">5.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Shortcut/@EntryValue">BLCreate</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B8FDA650180ED0478749C8EB34E1F64E/Text/@EntryValue">public Nov.Helpers.BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt; Create($ENTITY$ model, int currentPersonId)&#xD;
+       {&#xD;
+			if (model == null)&#xD;
+            {&#xD;
+                return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(false, $RESULTCODE$.NullItemInput, null, $RESULTCODE$.NullItemInput.ToString(), ErrorMessages[$RESULTCODE$.NullItemInput]);&#xD;
+            }&#xD;
+            if (currentPersonId &lt; 1)&#xD;
+            {&#xD;
+                return new BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(false, $RESULTCODE$.InvalidPersonId, null, $RESULTCODE$.InvalidPersonId.ToString(), ErrorMessages[$RESULTCODE$.InvalidPersonId]);&#xD;
+            }&#xD;
+&#xD;
+           try&#xD;
+           {&#xD;
+               var item = MapForCreate(model);&#xD;
+               item.CreatedByPersonId = currentPersonId;&#xD;
+               item.CreatedDate = System.DateTime.Now;&#xD;
+               item.UpdatedByPersonId = currentPersonId;&#xD;
+               item.UpdatedDate = System.DateTime.Now;&#xD;
+&#xD;
+               this.$ENTITYSERVICE$.Add(item);&#xD;
+               this.$ENTITYSERVICE$.SaveChanges();&#xD;
+               this.Logger.LogAudit("$ENTITY$ created", "$ENTITY$ created: id={0}", model.Id);&#xD;
+&#xD;
+               return new Nov.Helpers.BusinessResult&lt;$RESULTCODE$, $ENTITY$&gt;(true, $RESULTCODE$.Okay, item, "", "");&#xD;
+           }&#xD;
+           catch (System.Data.Entity.Validation.DbEntityValidationException exception)&#xD;
+           {&#xD;
+               return this.HandleDbEntityValidationException(exception, $RESULTCODE$.DbValidationError);&#xD;
+           }&#xD;
+           catch (System.Exception exception)&#xD;
+           {&#xD;
+               this.Logger.LogError(exception, "Error", "Exception in $CLASS$.Create");&#xD;
+               throw;&#xD;
+           }&#xD;
+       }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/CustomProperties/=FileName/@EntryIndexedValue">Configuration</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Description/@EntryValue">RSIS Entity Context Configuration WhoStamped</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=App/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=App/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=ENTITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=ENTITY/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=NAMESPACE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=TYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Field/=TYPE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BCC9223E65E1D746927F55B0E328843D/Text/@EntryValue">using System.ComponentModel.DataAnnotations.Schema;&#xD;
+using Nov.$App$.Models;&#xD;
+&#xD;
+namespace $NAMESPACE$&#xD;
+{&#xD;
+    internal class $ENTITY$Configuration : WhoStampedConfigurationBase&lt;$ENTITY$&gt;&#xD;
+    {&#xD;
+        public $TYPE$()&#xD;
+        {&#xD;
+            this.ToTable("$ENTITY$", RsisApplicationContext.AppSchemaName);&#xD;
+            this.HasKey(x =&gt; x.Id);&#xD;
+            this.Property(x =&gt; x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);&#xD;
+        }&#xD;
+    }&#xD;
+}&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Categories/=ng/@EntryIndexedValue">ng</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Categories/=RSIS/@EntryIndexedValue">RSIS</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Description/@EntryValue">ng Jasmine spec that something should be defined</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Field/=THING/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Field/=THING/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Scope/=FFA15E6CFCBE90499C572A859225B012/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Scope/=FFA15E6CFCBE90499C572A859225B012/CustomProperties/=availableInTypeScript/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Scope/=FFA15E6CFCBE90499C572A859225B012/Type/@EntryValue">InJavaScriptFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Shortcut/@EntryValue">specDefined</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA35A7B4722C9C47B52944F3D9BF5901/Text/@EntryValue">	it('should be defined', function () {&#xD;
+		expect(sut.$THING$).toBeDefined();&#xD;
+	});</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=4386F01B791C56499C7EA059B55FFB54/@KeyIndexDefined">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=961894CCC510410ABE2B99132B253C80/Color/@EntryValue">Black</s:String></wpf:ResourceDictionary>

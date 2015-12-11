@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html ng-app="example">
+<head>
+    <title>Azure Application Insights sample | Angulartics</title>
+</head>
+<body>
+    <div>
+        <p>Please check the console for some log output, and log into AppInsights to see if you received the telemetry.</p>
+        <p>Also check the network traffic to see the telemetry requests being sent up to Azure</p>
+    </div>
+<ui-view></ui-view>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script src="../src/logging-appinsights.js"></script>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+
+        angular.module('example', ['ui.router', 'logging-appinsights'])
+            .config(function ($urlRouterProvider, $stateProvider) {
+                $urlRouterProvider.otherwise('/');
+
+                $stateProvider.state('home', {
+                    url: '/',
+                    controller: 'exampleController as vm'
+                });
+            });
+
+        angular.module('example')
+            .controller('exampleController', exampleController);
+
+        exampleController.$inject = ['$log'];
+
+        function exampleController($log) {
+            $log.log('here is a plain log call');
+            $log.info('here is some info');
+            $log.warn('here is a warning');
+            $log.error('here is an error');
+            $log.debug('here is a debug message');
+        }
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_root", "_root", "{931DCCBF-2106-435C-BDBE-05EEB0150770}"
+	ProjectSection(SolutionItems) = preProject
+		bower.json = bower.json
+		gulpfile.js = gulpfile.js
+		LICENSE = LICENSE
+		package.json = package.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{78841654-FA8A-4DAF-84FE-ADF73B8D9397}"
+	ProjectSection(SolutionItems) = preProject
+		src\logging-appinsights.js = src\logging-appinsights.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A7FAC820-6283-4E7C-9EAB-B8681EBD0A3D}"
+	ProjectSection(SolutionItems) = preProject
+		tests\logging-appinsights.spec.js = tests\logging-appinsights.spec.js
+		tests\wallaby.json = tests\wallaby.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{24ECD9FB-C778-47B2-9D04-2E5424C2BFA7}"
+	ProjectSection(SolutionItems) = preProject
+		example\index.html = example\index.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
