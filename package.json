@@ -1,0 +1,10 @@
+{
+  "name": "ApplicationInsights-angular-logging",
+  "version": "0.0.1",
+  "description": "ApplicationInsights-angular-logging",
+  "main": "dist/mythingy.js",
+  "author": {
+    "name": "jacobsonba",
+    "email": "brett.jacobson@nov.com"
+  }
+}
